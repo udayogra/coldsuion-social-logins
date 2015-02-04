@@ -1,0 +1,5 @@
+<cfhttp  url="http://graph.facebook.com/100004393232902/feed" method="post" >
+   <cfhttpparams type="formfield" name="message" value="ssss">
+</cfhttp>
+<cfset session.posted = 'true'>
+<cflocation url="oauth.cfm>"
